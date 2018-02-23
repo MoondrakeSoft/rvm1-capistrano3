@@ -12,7 +12,7 @@ exit $?
 
 # run the installer
 echo $rvm_path
-if \curl -L https://get.rvm.io -o rvm-installer.sh && bash rvm-installer.sh stable --path $rvm_path
+if \curl -L https://get.rvm.io -o rvm-installer.sh && bash rvm-installer.sh --auto-dotfiles stable --path $rvm_path
 then __LAST_STATUS=0
 else __LAST_STATUS=$?
 fi
